@@ -120,6 +120,7 @@ nav a:focus {
 .skip{
   position: absolute;
   top:-40px;
+  display: none;
  }
 
 
@@ -131,7 +132,7 @@ nav a:focus {
 
 /* Step 3: Write selector/rule property to style all elements when in focus*/
 :focus {
-  border: 2px solid black; 
+  border: 2px solid; 
 }
 
 
@@ -151,9 +152,9 @@ first div in the grid  and place it in the grid. */
 .container div:first-child {
   grid-column: 1/-1;
   background-image:url("../images/header.jpg");
-  background-attachment: fixed;
-  background-position: center;
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 
@@ -167,19 +168,19 @@ first div in the grid  and place it in the grid. */
 }
 
 .about {
-  grid-row: 2/3;
+  grid-row: 2;
 }
 
 .method {
-  grid-row: 3/4;
+  grid-row: 3;
 }
 
 .clients {
-  grid-row: 4/5; 
+  grid-row: 4; 
 }
 
 .contact {
-  grid-row: 5/6;
+  grid-row: 5;
 }
 
 .about-image, .method-image, .clients-image, .contact-image{
@@ -190,19 +191,19 @@ first div in the grid  and place it in the grid. */
 }
       
 .about-image {
-  grid-row: 2/3; 
+  grid-row: 2; 
 }
       
 .method-image {
-  grid-row: 3/4; 
+  grid-row: 3; 
 }
       
 .clients-image {
-  grid-row: 4/5; 
+  grid-row: 4; 
 }
       
 .contact-image {
-  grid-row: 5/6; 
+  grid-row: 5; 
 }      
 
 
