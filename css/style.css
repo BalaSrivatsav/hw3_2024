@@ -150,8 +150,6 @@ first div in the grid  and place it in the grid. */
 
 .container div:first-child {
   grid-column: 1/-1;
-  grid-row: 1/2;
-  min-height: 500px;
   background-image:url("../images/header.jpg");
   background-attachment: fixed;
   background-position: center;
@@ -164,29 +162,29 @@ first div in the grid  and place it in the grid. */
 
       /*This will be a lot of rules.... but be strategic and combine seletors*/
 
-#about, #method, #clients, #contact {
-  grid-column: 2/span 1; 
+.about, .method, .clients, .contact {
+  grid-column: 2/ span 1; 
 }
 
-#about {
+.about {
   grid-row: 2/3;
 }
 
-#method {
+.method {
   grid-row: 3/4;
 }
 
-#clients {
+.clients {
   grid-row: 4/5; 
 }
 
-#contact {
+.contact {
   grid-row: 5/6;
 }
 
 .about-image, .method-image, .clients-image, .contact-image{
   max-height: 600px;
-  grid-column: 1/-1;
+  grid-column: 1/ span 3;
   overflow: hidden;
       
 }
