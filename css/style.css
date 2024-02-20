@@ -153,7 +153,9 @@ first div in the grid  and place it in the grid. */
   grid-row: 1/2;
   min-height: 500px;
   background-image:url("../images/header.jpg");
+  background-attachment: fixed;
   background-position: center;
+  background-size: cover;
 }
 
 
@@ -181,23 +183,6 @@ first div in the grid  and place it in the grid. */
 #contact {
   grid-row: 5/6;
 }
-
-.about.text-block {
-  grid-row: 2/3;
-  align-items: auto;
-}
-
-.method.text-block {
-  grid-row: 3/4;
-}
-
-.clients.text-block {
-  grid-row: 4/5; 
-}
-
-.contact.text-block {
-  grid-row: 5/6;
-}      
 
 .about-image, .method-image, .clients-image, .contact-image{
   max-height: 600px;
